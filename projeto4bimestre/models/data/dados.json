@@ -1,0 +1,42 @@
+[
+    {
+        "id": "l@lucasfifa24",
+        "favoritos": {
+            "titulo": "Opera\u00e7\u00e3o Natal",
+            "overview": "Depois que o Papai Noel \u2013 codinome: Das Neves \u2013 \u00e9 sequestrado, o Chefe de Seguran\u00e7a do Polo Norte deve se unir ao mais infame ca\u00e7ador de recompensas do mundo em uma miss\u00e3o global e cheia de a\u00e7\u00e3o para salvar o Natal.",
+            "backdrop_path": "/rOmUuQEZfPXglwFs5ELLLUDKodL.jpg"
+        }
+    },
+    {
+        "id": "l@lucasfifa24",
+        "favoritos": {
+            "titulo": "Kung Fu Panda 4",
+            "overview": "Po est\u00e1 prestes a se tornar o novo l\u00edder espiritual do Vale da Paz, mas antes que possa fazer isso, ele deve encontrar um sucessor para se tornar o novo Drag\u00e3o Guerreiro.  Ele parece encontrar uma em Zhen, uma raposa com muitas habilidades promissoras, mas que n\u00e3o gosta muito da ideia de Po trein\u00e1-la.",
+            "backdrop_path": "/kYgQzzjNis5jJalYtIHgrom0gOx.jpg"
+        }
+    },
+    {
+        "id": "l@lucasfifa24",
+        "favoritos": {
+            "titulo": "Kraven: O Ca\u00e7ador",
+            "overview": "Sergei Kravinoff \u00e9 um grande ca\u00e7ador, que toma um soro m\u00e1gico que lhe d\u00e1 habilidades sobre-humanas e uma vida mais longa.",
+            "backdrop_path": "/v9Du2HC3hlknAvGlWhquRbeifwW.jpg"
+        }
+    },
+    {
+        "id": "rafael@example.com",
+        "favoritos": {
+            "titulo": "O Senhor dos An\u00e9is: A Guerra dos Rohirrim",
+            "overview": "183 anos antes dos eventos narrados na trilogia original, um ataque repentino de Wulf, um inteligente e implac\u00e1vel lorde Dunlending em busca de vingan\u00e7a pela morte de seu pai, for\u00e7a Helm Hammerhand e seu povo a fazer uma ousada \u00faltima resist\u00eancia na antiga fortaleza de Hornburg. Encontrando-se em uma situa\u00e7\u00e3o cada vez mais desesperadora, H\u00e9ra, a filha de Helm, deve reunir a vontade de liderar a resist\u00eancia contra um inimigo mortal que pretende destru\u00ed-los totalmente.",
+            "backdrop_path": "/ie8OSgIHEl6yQiGJ90dsyBWOpQA.jpg"
+        }
+    },
+    {
+        "id": "rafael@example.com",
+        "favoritos": {
+            "titulo": "Flow",
+            "overview": "Gato \u00e9 um animal solit\u00e1rio, mas quando seu lar \u00e9 destru\u00eddo por uma grande inunda\u00e7\u00e3o, ele encontra ref\u00fagio em um barco habitado por diversas esp\u00e9cies, tendo que se juntar a elas apesar das diferen\u00e7as.",
+            "backdrop_path": "/b3mdmjYTEL70j7nuXATUAD9qgu4.jpg"
+        }
+    }
+]

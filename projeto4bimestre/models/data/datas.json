@@ -1,0 +1,22 @@
+[
+    {
+        "login": "rafael@example.com",
+        "senha": "2345",
+        "photo": "uploads/image/perfil.png"
+    },
+    {
+        "login": "rafael@gmail.com",
+        "senha": "1234",
+        "photo": "uploads/image/a58cfa38-a651-4392-9694-ab4d24506810.jpg"
+    },
+    {
+        "login": "k@g",
+        "senha": "123456",
+        "photo": "uploads/image/perfil.png"
+    },
+    {
+        "login": "l@lucasfifa24",
+        "senha": "12tetra345",
+        "photo": "uploads/image/perfil.png"
+    }
+]

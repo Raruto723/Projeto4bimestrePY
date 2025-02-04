@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+Filmes Alugados
+{% endblock titulo %}
+
+{% block conteudo %}
+<div class="container">
+    <h3 class="mt-4 text-center white">Favoritos</h3>
+    <br>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-4">
+    {% if session.get('usuarioLogado') %}
+        {% for item in dados %}
+            {% if item['id'] == session.get('usuarioLogado') %}
+                <div class="col d-flex justify-content-center">
+                    <div class="card h-100" style="width: 18rem;">
+                        <img src="https://image.tmdb.org/t/p/w500/{{ item['favoritos']['backdrop_path'] }}" class="card-img-top"
+                            alt="Poster de {{ item['favoritos']['titulo'] }}">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">{{ item['favoritos']['titulo'] }}</h5>
+                            <p class="card-text">{{ item['favoritos']['overview'] }}</p>
+                            <hr>
+                            <div class="text-center mt-auto">
+                                <form method="POST" action="{{ url_for('front_controller.remove')}}" class="d-flex justify-content-center">
+                                    <input type="hidden" name="nome" value="{{item['favoritos']['titulo']}}">
+                                    <input type="hidden" name="id" value="{{session.get('usuarioLogado')}}">
+                                    <button type="submit" class="btn btn-danger btn-sm"><img src="{{ url_for('static', filename='image/rmv_favorite.png') }}" alt=""></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    {%else%}
+    <p class="white"> É necessário estar logado para ver seus favoritos </p>
+    {% endif %}
+    </div>
+</div>
+{% endblock conteudo %}

@@ -1,0 +1,521 @@
+.body{
+  background-color: #181a25;
+}
+
+.white {
+  color: white;
+}
+
+/* Mantém as configurações gerais */
+body {
+  padding-bottom: 60px;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.img{
+  padding: 30%;
+}
+
+.btnfav{
+  background-color: rgb(51, 204, 51);
+  border: rgb(51, 204, 51);
+  margin: 0;
+  border-radius: 5px;
+}
+
+.btnfav:hover {
+  background-color: rgb(0, 157, 10);
+}
+
+/* Ajustes no formulário e botão de logout para centralizar */
+.form-inline {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center; /* Centraliza os itens no espaço disponível */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+}
+
+.navbar-nav .nav-item {
+  display: flex;
+  justify-content: center; /* Garante que os ícones fiquem centralizados */
+  align-items: center;
+}
+
+.navbar-nav .d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Alinhamento e margens para ícones de foto do usuário */
+.nav-item.photo2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-nav .ms-auto {
+  margin-left: auto;
+}
+
+.img2 {
+  height: 30px;
+  width: 30px;
+}
+
+.navbar-nav .nav-link {
+  color: #333 ; /* Cor do texto das links */
+  
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.2);  /* Hover em um tom opaco de preto */
+  transform: scale(1.1);  /* Leve aumento no tamanho */
+  border-radius: 50%;
+}
+
+/* Footer translúcido com cor rgb(250, 235, 215) */
+.footer {
+  background-color: rgb(228, 37, 37) ; /* Ajuste a opacidade conforme necessário */
+}
+
+.navbar-icon {
+  width: 30px;
+  height: auto;
+  vertical-align: middle;  /* Alinha verticalmente o ícone */
+  margin: 0 10px;  /* Espaçamento ao lado do ícone, se necessário */
+}
+
+/* Adicionando suavidade à transição do tooltip */
+.tooltip {
+transition: opacity 0.3s ease-in-out;  /* Suaviza a transição do tooltip */
+}
+
+ul {
+list-style-type: none; /* Remove os marcadores */
+padding: 0; /* Remove o espaçamento interno, caso necessário */
+}
+
+.photo2 {
+  margin: 10px;
+  width: 50px;
+  height: auto;
+  border: 0;
+  padding: 0;
+}
+
+/* Estilo do título */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 6rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  animation: slideIn 2s ease-out forwards, pulse 0.8s infinite alternate, colorChange 3s linear infinite, bounce 1.5s ease-in-out 4s forwards, static 1s 6s forwards;
+  display: inline-block;
+  white-space: nowrap; /* Impede quebra de linha no texto */
+}
+
+/* Estilo do texto h2 */
+h2 {
+  font-family: 'Roboto', sans-serif; /* Fonte para o h2 */
+  font-size: 2rem;
+  text-align: center;
+  opacity: 0; /* Começa invisível */
+  animation: typing 10s steps(60) 7s forwards, pause 1s 18s forwards; /* Máquina de escrever com pausa */
+  white-space: nowrap;
+  width: auto; /* Garante que o texto tenha a largura total do contêiner */
+  overflow: hidden; /* Garante que o texto que não for mostrado ainda não apareça */
+  border-right: 3px solid rgba(255, 255, 255, 0); /* Simula o cursor da máquina de escrever */
+}
+
+/* Efeito de digitação para o segundo h2 com atraso */
+h2:nth-of-type(2) {
+  animation: typing 10s steps(60) 11s forwards, pause 1s 26s forwards;
+}
+
+/* Efeito de digitação para o terceiro h2 com atraso */
+h2:nth-of-type(3) {
+  animation: typing 10s steps(60) 20s forwards, pause 1s 34s forwards; 
+}
+
+/* Animação do título (Entrada) */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  25% {
+    opacity: 0.5;
+    transform: translateY(-20px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animação de pulso (efeito de pulsar) - Mais rápida */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.05); /* Menos amplificado */
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+/* Animação de mudança de cor (Degradê de cores vivas) */
+@keyframes colorChange {
+  0% {
+    color: #e50914; /* Vermelho Netflix */
+  }
+  25% {
+    color: #ff9900; /* Laranja vibrante */
+  }
+  50% {
+    color: #33cc33; /* Verde */
+  }
+  75% {
+    color: #0066ff; /* Azul */
+  }
+  100% {
+    color: #e50914; /* Volta para o vermelho */
+  }
+}
+
+/* Animação de saltitar (efeito de salto) */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Animação de ficar estático e com cor vermelha */
+@keyframes static {
+  0% {
+    transform: scale(1);
+    color: #e50914;
+  }
+  100% {
+    transform: scale(1);
+    color: #e50914;
+  }
+}
+
+/* Animação de máquina de escrever (para o h2) */
+@keyframes typing {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+/* Animação de pausa (para os pontos finais) */
+@keyframes pause {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.title-container {
+  padding: 0;
+  margin:0;
+  border:0;
+  top: 30%;
+  display: flex;
+  display: flex;
+  flex-direction: column; /* Adiciona flexbox para empilhar o h1 e h2 */
+  align-items: center;
+}
+
+/* Navbar fixa no topo */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Garante que o navbar fique acima de outros conteúdos */
+  padding-top: 5px; /* Menor padding no topo */
+  padding-bottom: 5px; /* Menor padding na parte inferior */
+  background-color: rgb(228, 37, 37); /* Mantém a cor vermelha */
+  max-height: 15%;
+}
+
+/* Footer fixo na parte inferior */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Garante que o footer fique acima de outros conteúdos */
+}
+
+/* Estilo do conteúdo principal, tornando-o rolável */
+.container-fluid {
+  flex: 1; /* Isso faz o conteúdo crescer para ocupar o espaço restante */
+  overflow-y: auto; /* Permite rolar o conteúdo */
+  padding: 20px; /* Espaçamento ao redor do conteúdo */
+}
+
+/* Definindo o estilo de título */
+
+
+/* Estilizando o formulário */
+form {
+  max-width: 700px; /* Largura maior para o formulário */
+  margin: 30px auto; /* Centraliza o formulário */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte profissional */
+}
+
+label{
+  width: 200px;
+}
+
+/* Estilizando os inputs */
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  width: 100%;
+  padding: 25px;
+  margin-bottom: 20px;
+  border: 2px solid #e8e8e8; /* Cor de borda clara */
+  border-radius: 8px; /* Bordas arredondadas */
+  background-color: #ffcccc; /* Fundo vermelho claro */
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease; /* Efeito suave nas interações */
+}
+
+/* Foco nos inputs */
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus {
+  border-color: #c22222; /* Cor da borda quando o input estiver em foco */
+  background-color: #d36464; /* Fundo mais claro quando em foco */
+  outline: none; /* Remove a borda padrão do navegador */
+}
+
+/* Hover nos inputs */
+input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover, textarea:hover {
+  background-color: #f73f3f; /* Fundo mais claro e opaco no hover */
+}
+
+/* Estilizando o botão */
+button {
+  background-color: rgb(192, 45, 40); /* Verde claro opaco */
+  color: white;
+  padding: 14px 20px;
+  border: 1px solid rgb(235, 61, 61);
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer; /* Cursor de mãozinha */
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover no botão */
+button:hover {
+  background-color: rgba(124, 4, 4, 0.33); /* Verde escuro opaco no hover */
+}
+
+/* Estilizando o cursor */
+input[type="text"], input[type="email"], input[type="password"], textarea, button {
+  cursor: pointer; /* Cursor com aparência de clique nos elementos interativos */
+}
+
+/* Melhorando a aparência do foco nos inputs */
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus, button:focus {
+  outline: none; /* Remove outline padrão */
+  box-shadow: 0 0 5px rgba(255, 99, 71, 0.6); /* Sombra ao redor do foco com tom vermelho */
+}
+
+.botaoescuro {
+  background-color: rgb(156, 0, 0);
+  border: 3px solid #450000b9;
+  padding: 0px;
+  margin: 0;
+}
+
+.espaco{
+  margin: 0 10px;
+}
+
+.botaoescuro:hover{
+  background-color: #350000b9;
+}
+@media (max-width: 900px) {
+
+  .navimg {
+    height: 30px;
+    width: auto;
+  }
+
+  .navbar-icon {
+    width: 10px;
+    height: auto;
+    vertical-align: middle;  /* Alinha verticalmente o ícone */
+    margin: 0 2px;  /* Espaçamento ao lado do ícone, se necessário */
+  }
+
+  .title {
+    font-size: 10px; /* Reduzindo o tamanho do título */
+    text-align: center;
+  }
+
+  .img {
+    padding: 10%; /* Reduz o padding para não ocupar muito espaço */
+  }
+
+  .navbar {
+    max-height: none;
+    padding: 0; /* Diminui o padding do menu */
+  }
+
+  .footer {
+    position: relative; /* Deixa o footer flutuante em telas menores */
+  }
+
+  form {
+    width: 90%; /* Garante que o formulário ocupe quase toda a largura */
+  }
+
+  input, textarea, button {
+    font-size: 14px; /* Reduz o tamanho do texto para melhor leitura */
+  }
+  .white {
+    color: white;
+  }
+  
+  .img {
+    padding: 10%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .btnfav {
+    background-color: rgb(51, 204, 51);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .btnfav:hover {
+    background-color: rgb(0, 157, 10);
+  }
+  
+  .form-inline {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .footer {
+    background-color: rgb(228, 37, 37);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .container-fluid {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  form {
+    max-width: 90%;
+    margin: 20px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #ffcccc;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  button {
+    background-color: rgb(192, 45, 40);
+    color: white;
+    padding: 14px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: rgba(124, 4, 4, 0.8);
+  }
+  .title {
+    font-size: 10px;
+  }
+  
+  h2 {
+    font-size: 2px;
+    
+  }
+  
+  .img {
+    padding: 5px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+  .title {
+    font-size: 3rem;
+  }
+    
+  .img {
+    padding: 5px;
+  }
+  
+  button {
+    font-size: 14px;
+  }
+}
